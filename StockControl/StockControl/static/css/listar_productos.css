@@ -13,7 +13,7 @@ body {
 h1 {
   text-align: center;
   margin: 20px 0;
-  color: tomato;
+  color: white;
 }
 
 table {
@@ -30,8 +30,8 @@ td {
 th {
   padding: 10px;
   text-align: center;
-  background-color: rgba(255, 99, 71, 0.411);
-  color: white;
+  background-color: yellow;
+  color: black;
 }
 
 tr:nth-child(even) {

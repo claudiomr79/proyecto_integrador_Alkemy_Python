@@ -1,9 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/crear.css' %}"
+    />
     <title>Crear un nuevo Proveedor</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Crear un nuevo Proveedor</h1>
+    <div class="centrado">
+      <form action="{% url 'crear_proveedor' %}" method="post">
+        {% csrf_token %} {{ form.as_p }}
+        <div>
+          <input id="enviar" type="submit" value="Guardar" />
+          <a href="{% url 'mostrar_proveedores' %}">Listado de Proveedores</a>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

@@ -16,6 +16,7 @@
     <table>
       <thead>
         <tr>
+          <th>Id</th>
           <th>Nombre</th>
           <th>Apellido</th>
           <th>Dni</th>
@@ -24,6 +25,7 @@
       <tbody>
         {% for proveedor in proveedores %}
         <tr>
+          <td>{{ proveedor.id }}</td>
           <td>{{ proveedor.nombre }}</td>
           <td>{{ proveedor.apellido }}</td>
           <td>{{ proveedor.dni }}</td>

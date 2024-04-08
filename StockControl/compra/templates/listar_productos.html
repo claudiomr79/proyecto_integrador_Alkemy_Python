@@ -16,6 +16,7 @@
     <table>
       <thead>
         <tr>
+          <th>Id</th>
           <th>Nombre</th>
           <th>Precio</th>
           <th>Stock</th>
@@ -25,6 +26,7 @@
       <tbody>
         {% for producto in productos %}
         <tr>
+          <td>{{ producto.id }}</td>
           <td>{{ producto.nombre }}</td>
           <td>{{ producto.precio }}</td>
           <td>{{ producto.stock_actual}}</td>

@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: white;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.centrado p {
+  margin: 15px 0;
+}
+
+.centrado p > button {
+  margin: 20px;
+  padding: 10px;
+}
+#enviar {
+  text-decoration: none;
+  color: black;
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#enviar:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
