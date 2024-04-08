@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/listar_proveedores.css' %}"
+    />
+    <title>Listado de Proveedores</title>
+  </head>
+  <body>
+    <h1>Listado de Proveedores</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Dni</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for proveedor in proveedores %}
+        <tr>
+          <td>{{ proveedor.nombre }}</td>
+          <td>{{ proveedor.apellido }}</td>
+          <td>{{ proveedor.dni }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <div id="menu">
+      <a href="{% url 'crear_proveedor' %}">Crear un nuevo Proveedor</a>
+      <a href="{% url 'mostrar_productos' %}">Listado de Productos</a>
+    </div>
+  </body>
+</html>
